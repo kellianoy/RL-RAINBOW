@@ -1,6 +1,6 @@
 # Implementation of Rainbow: Combining Improvements in Deep Reinforcement Learning
 
-This is a Reinforcement Learning porject from two students of Ecole Polytechnique / IP Paris.
+This is a Reinforcement Learning project from two students of Ecole Polytechnique / IP Paris.
 
 ## Authors
  
@@ -8,6 +8,17 @@ This is a Reinforcement Learning porject from two students of Ecole Polytechniqu
 | ---------- | ---------- | --------------------------------- |
 | Kellian    | COTTART    | kellian.cottart@polytechnique.edu |
 | Luc        | GENSBITTEL | luc.gensbittel@polytechnique.edu  |
+
+## How to run the code
+
+1. Start by installing the dependencies with:
+   ```pip install -r requirements.txt```
+2. Then, you can run the code with:
+   ```python main.py```
+
+## How does it work?
+
+[WIP] - We will add a description of the code here, when the paragraph on it will be finalized on the report.
 
 ## Bibliography
 
