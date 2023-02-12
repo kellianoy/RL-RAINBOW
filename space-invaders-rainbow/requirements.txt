@@ -1,5 +1,11 @@
+gymnasium[all]
+pyglet
+atari-py 
+tensorboard
 torch
+tqdm
+numpy == 1.22.0
 tianshou
-gym
-ffmpeg
-envpool
+opencv-python
+autorom[accept-rom-license]
+torch-tb-profiler
