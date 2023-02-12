@@ -44,10 +44,8 @@ def ipython_show_video(path: str) -> None:
 
 
 if __name__ == "__main__":
-
     # environment
-    env_id = "CartPole-v0"
-    env = gym.make(env_id)
+    env = gym.make("CartPole-v1")
     # seed
     seed = 777
     np.random.seed(seed)
