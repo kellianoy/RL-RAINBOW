@@ -2,9 +2,9 @@ import random
 from typing import Dict, List, Tuple
 
 import numpy as np
-from segment_tree import MinSegmentTree, SumSegmentTree
+from classes.segment_tree import MinSegmentTree, SumSegmentTree
 
-from classes import ReplayBuffer
+from classes.ReplayBuffer import ReplayBuffer
 
 
 class PrioritizedReplayBuffer(ReplayBuffer):

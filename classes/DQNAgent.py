@@ -8,7 +8,9 @@ import torch.optim as optim
 from IPython.display import clear_output
 from torch.nn.utils import clip_grad_norm_
 
-from classes import PrioritizedReplayBuffer
+from classes.ReplayBuffer import ReplayBuffer
+from classes.PrioritizedReplayBuffer import PrioritizedReplayBuffer
+from classes.Network import Network
 
 
 class DQNAgent:

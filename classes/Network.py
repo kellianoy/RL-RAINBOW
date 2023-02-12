@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from classes import NoisyLinear
+from classes.NoisyLinear import NoisyLinear
 
 
 class Network(nn.Module):

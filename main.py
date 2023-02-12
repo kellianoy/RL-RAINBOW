@@ -9,7 +9,7 @@ import numpy as np
 import torch
 from IPython.display import HTML, display
 
-from classes import DQNAgent
+from classes.DQNAgent import DQNAgent
 
 
 def seed_torch(seed):
@@ -34,6 +34,13 @@ def ipython_show_video(path: str) -> None:
 
     video = io.open(path, "r+b").read()
     encoded = base64.b64encode(video)
+    display(HTML(
+        data="""
+        <video width="320" height="240" alt="test" controls>
+        <source src="data:video/mp4;base64,{0}" type="video/mp4"/>
+        </video>
+        """.format(encoded.decode("ascii"))
+    ))
 
 
 if __name__ == "__main__":
@@ -58,14 +65,6 @@ if __name__ == "__main__":
     # test
     video_folder = "videos/rainbow"
     agent.test(video_folder=video_folder)
-
-    display(HTML(
-        data="""
-        <video width="320" height="240" alt="test" controls>
-        <source src="data:video/mp4;base64,{0}" type="video/mp4"/>
-        </video>
-        """.format(encoded.decode("ascii"))
-    ))
 
     latest_file = show_latest_video(video_folder=video_folder)
     print("Played:", latest_file)
