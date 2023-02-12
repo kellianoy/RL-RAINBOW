@@ -85,6 +85,7 @@ class DQNAgent:
             "cuda" if torch.cuda.is_available() else "cpu"
         )
         print(self.device)
+        self.plot = True
 
         # PER
         # memory for 1-step Learning
@@ -334,12 +335,5 @@ class DQNAgent:
         losses: List[float],
     ):
         """Plot the training progresses."""
-        clear_output(True)
-        plt.figure(figsize=(20, 5))
-        plt.subplot(131)
-        plt.title('frame %s. score: %s' % (frame_idx, np.mean(scores[-10:])))
-        plt.plot(scores)
-        plt.subplot(132)
-        plt.title('loss')
-        plt.plot(losses)
-        plt.show()
+        print(
+            f"frame: {frame_idx} - last loss: {losses[-1]} - last score: {scores[-1]}")
