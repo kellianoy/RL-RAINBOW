@@ -55,7 +55,7 @@ if __name__ == "__main__":
     seed_torch(seed)
     env.seed(seed)
     # parameters
-    num_frames = 20000
+    num_frames = 50000
     memory_size = 10000
     batch_size = 128
     target_update = 100

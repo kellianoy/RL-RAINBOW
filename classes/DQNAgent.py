@@ -82,10 +82,9 @@ class DQNAgent:
 
         # device: cpu / gpu
         self.device = torch.device(
-            "cuda" if torch.cuda.is_available() else "cpu"
+            "cuda:0" if torch.cuda.is_available() else "cpu"
         )
         print(self.device)
-        self.plot = True
 
         # PER
         # memory for 1-step Learning
