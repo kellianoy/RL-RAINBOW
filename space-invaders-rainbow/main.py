@@ -41,7 +41,7 @@ def get_args():
     parser.add_argument("--no-weight-norm", action="store_true", default=False)
     parser.add_argument("--n-step", type=int, default=3)
     parser.add_argument("--target-update-freq", type=int, default=500)
-    parser.add_argument("--epoch", type=int, default5=50)
+    parser.add_argument("--epoch", type=int, default=50)
     parser.add_argument("--step-per-epoch", type=int, default=50000)
     parser.add_argument("--step-per-collect", type=int, default=10)
     parser.add_argument("--update-per-step", type=float, default=0.1)
