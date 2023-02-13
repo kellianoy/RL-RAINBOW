@@ -54,7 +54,7 @@ Some known libraries are:
 - `gym` for the environments;
 - `atari-py` for the Atari environment;
 - `autorom` for the Atari games roms validation;
-- `tianshou` for the RL algorithms of the `space-invaders`folder, and reference [3].
+- `tianshou` for the RL algorithms of the `space-invaders` folder, and reference [3].
 
 ## Examples video
 
