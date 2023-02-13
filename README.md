@@ -12,7 +12,9 @@ The purpose of having two different environment is to show that the algorithm wo
 - [Authors](#authors)
 - [How to run the code](#how-to-run-the-code)
 - [Requirements](#requirements)
-- [How does it work?](#how-does-it-work)
+- [Examples video](#examples-video)
+  - [CartPole-v1](#cartpole-v1)
+  - [SpaceInvadersNoFrameskip-v4](#spaceinvadersnoframeskip-v4)
 - [Bibliography](#bibliography)
 
 
@@ -37,10 +39,8 @@ The purpose of having two different environment is to show that the algorithm wo
    ```bash
    pip install -r requirements.txt
    ```
-4. Then, you can run the code with:
-   ```bash
-   python main.py
-   ```
+Individual folders have their own README.md files, with more details about the code.
+
 > **Note:** You can run space-invaders with several parameters, to change the number of epochs, the number of frames to render... You can find the list of parameters in the file `main.py` in the folder `space-invaders`.
 
 ## Requirements
@@ -56,9 +56,15 @@ Some known libraries are:
 - `autorom` for the Atari games roms validation;
 - `tianshou` for the RL algorithms of the `space-invaders`folder, and reference [3].
 
-## How does it work?
+## Examples video
 
-[WIP] - We will add a description of the code here, when the paragraph on it will be finalized on the report.
+### CartPole-v1
+
+[![CartPole](./cartpole/videos/rainbow/cartPole-v1/rl-video-episode-0.gif)](./cartpole/videos/rainbow/cartPole-v1/rl-video-episode-0.mp4)
+
+### SpaceInvadersNoFrameskip-v4
+
+[![SpaceInvaders](./space-invaders/videos/2023_02_13_191552.gif)](./space-invaders/videos/2023_02_13_191552.mp4)
 
 ## Bibliography
 

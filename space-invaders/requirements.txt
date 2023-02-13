@@ -1,0 +1,11 @@
+gymnasium[all]
+pyglet
+atari-py 
+tensorboard
+torch
+tqdm
+numpy == 1.22.0
+tianshou
+opencv-python
+autorom[accept-rom-license]
+torch-tb-profiler

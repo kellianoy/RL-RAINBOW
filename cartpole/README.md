@@ -1,24 +1,22 @@
-# Implementation of Rainbow: Combining Improvements in Deep Reinforcement Learning
+# CartPole-v1
 
-This is a Reinforcement Learning project from two students of Ecole Polytechnique / IP Paris.
+This is the implementatiion of the Rainbow algorithm [1] as specified by "Rainbow is all you need" [2] for the `CartPole-v1` environment.
+## Pre-requisites
 
-## Authors
- 
-| First Name | Last Name  | E-mail address                    |
-| ---------- | ---------- | --------------------------------- |
-| Kellian    | COTTART    | kellian.cottart@polytechnique.edu |
-| Luc        | GENSBITTEL | luc.gensbittel@polytechnique.edu  |
+```py
+pip install -r requirements.txt
+```
 
-## How to run the code
+## Start the program
 
-1. Start by installing the dependencies with:
-   ```pip install -r requirements.txt```
-2. Then, you can run the code with:
-   ```python main.py```
+```py
+python main.py
+```
+## Results
 
-## How does it work?
+The following results are obtained by running the code on a single GPU (NVIDIA GeForce GTX 3070). The [video](./videos/rainbow/cartPole-v1/rl-video-episode-0.mp4) is the result of the algorithm.
 
-[WIP] - We will add a description of the code here, when the paragraph on it will be finalized on the report.
+[![CartPole](./videos/rainbow/cartPole-v1/rl-video-episode-0.gif)](./videos/rainbow/cartPole-v1/rl-video-episode-0.mp4)
 
 ## Bibliography
 
