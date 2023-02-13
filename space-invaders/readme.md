@@ -38,6 +38,7 @@ To watch metrics pertaining to the training, run tensorboard:
 ```sh
 tensorboard --logdir=log --host localhost --port 8888
 ```
+Go to `localhost:8888` on your web browser.
 
 ## Results
 
