@@ -41,7 +41,7 @@ def get_args():
     parser.add_argument("--no-weight-norm", action="store_true", default=False)
     parser.add_argument("--n-step", type=int, default=3)
     parser.add_argument("--target-update-freq", type=int, default=500)
-    parser.add_argument("--epoch", type=int, default=2)
+    parser.add_argument("--epoch", type=int, default5=50)
     parser.add_argument("--step-per-epoch", type=int, default=50000)
     parser.add_argument("--step-per-collect", type=int, default=10)
     parser.add_argument("--update-per-step", type=float, default=0.1)
@@ -49,7 +49,7 @@ def get_args():
     parser.add_argument("--training-num", type=int, default=10)
     parser.add_argument("--test-num", type=int, default=10)
     parser.add_argument("--logdir", type=str, default="log")
-    parser.add_argument("--render", type=float, default=0.1)
+    parser.add_argument("--render", type=float, default=0.)
     parser.add_argument(
         "--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu"
     )
@@ -63,12 +63,9 @@ def get_args():
         choices=["tensorboard", "wandb"],
     )
     parser.add_argument("--wandb-project", type=str, default="atari.benchmark")
-    parser.add_argument(
-        "--watch",
-        default=False,
-        action="store_true",
-        help="watch the play of pre-trained policy only"
-    )
+    parser.add_argument("--watch", default=False, action="store_true",
+                        help="watch the play of pre-trained policy only"
+                        )
     parser.add_argument("--save-buffer-name", type=str, default=None)
     return parser.parse_args()
 
