@@ -1,11 +1,11 @@
 # Implementation of Rainbow: Combining Improvements in Deep Reinforcement Learning <!-- omit in toc -->
 
-This is a Reinforcement Learning project from two students of Ecole Polytechnique / IP Paris. This is an implementation of Rainbow concerning two different topics:
+This is part of a Reinforcement Learning project from two students of Ecole Polytechnique / IP Paris. It consists in a python implementation of the Rainbow algorithm on two different environments:
 
 - [CartPole-v1](https://gym.openai.com/envs/CartPole-v1/) test environment;
 - [SpaceInvadersNoFrameskip-v4](https://gym.openai.com/envs/SpaceInvadersNoFrameskip-v4/) Atari environment.
 
-The purpose of having two different environment is to show that the algorithm works on both simple and complex environments. The code is based on the paper [1], but the implementation of the first part comes from [2], and to use Atari Environment, [3] was used.
+The purpose of having two different environments is to show that the algorithm works on both simple and complex environments. The code is based on the paper [1], but the implementation of the first part comes from [2], and to use Atari Environment, [3] was used.
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -39,9 +39,9 @@ The purpose of having two different environment is to show that the algorithm wo
    ```bash
    pip install -r requirements.txt
    ```
-Individual folders have their own README.md files, with more details about the code.
+Individual folders have their own README.md file, with more details about the code.
 
-> **Note:** You can run space-invaders with several parameters, to change the number of epochs, the number of frames to render... You can find the list of parameters in the file `main.py` in the folder `space-invaders`.
+> **Note:** You can run space-invaders with several parameters, to change the number of epochs, the number of frames to render... You can find the list of parameters in the file `main.py`, in the folder `space-invaders`.
 
 ## Requirements
 
