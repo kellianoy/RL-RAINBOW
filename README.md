@@ -1,6 +1,6 @@
 # Implementation of Rainbow: Combining Improvements in Deep Reinforcement Learning <!-- omit in toc -->
 
-This is part of a Reinforcement Learning project from two students of Ecole Polytechnique / IP Paris. It consists in a python implementation of the Rainbow algorithm on two different Atari games:
+This is part of a Reinforcement Learning project from two students of Ecole Polytechnique / IP Paris. It consists in a python implementation of the Rainbow algorithm on two different environments:
 
 - [CartPole-v1](https://gym.openai.com/envs/CartPole-v1/) test environment;
 - [SpaceInvadersNoFrameskip-v4](https://gym.openai.com/envs/SpaceInvadersNoFrameskip-v4/) Atari environment.
