@@ -17,7 +17,7 @@ pip install -r requirements.txt
 To train the model for SpaceInvaders, run:
 
 ```py
-python main.py --epoch 100 --step-per-epoch 100000
+python main.py --epoch 10 --step-per-epoch 100000 --resume-path "log/SpaceInvadersNoFrameskip-v4/rainbow/0/policy_save/policy.pth" --save-buffer-name "buffer" --training-num 16
 ```
 
 ## Testing
@@ -31,6 +31,13 @@ To test the presaved model for SpaceInvaders:
 python main.py --resume-path "log/SpaceInvadersNoFrameskip-v4/rainbow/0/policy_save/policy.pth" --render 0.0125 --test-num 1 --training-num 1 --save-buffer-name "buffer"
 ```
 
+## Resume training
+
+To resume training, it is possible to specify `--resume-path`:
+
+```py
+python main.py --epoch 10 --step-per-epoch 100000 --resume-path "log/SpaceInvadersNoFrameskip-v4/rainbow/0/policy_save/policy.pth"
+```
 ## Tensorboard
 
 To watch metrics pertaining to the training, run tensorboard:

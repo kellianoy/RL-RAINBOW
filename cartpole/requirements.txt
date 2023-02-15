@@ -4,5 +4,3 @@ pyglet              == 1.5.15
 gym                 == 0.21.0
 PyVirtualDisplay    == 3.0
 ffmpeg
-gym[atari]
-autorom[accept-rom-license]
