@@ -28,7 +28,7 @@ To test the presaved model for SpaceInvaders:
 2. To watch the trained model with one frame, run:
 
 ```py
-python main.py --resume-path "log/SpaceInvadersNoFrameskip-v4/rainbow/0/policy_save/policy.pth" --render 0.0125 --test-num 1 --training-num 1 --save-buffer-name "buffer"
+python main.py --resume-path "log/SpaceInvadersNoFrameskip-v4/rainbow/0/policy_save/policy.pth" --render 0.0125 --test-num 1 --training-num 1
 ```
 
 ## Resume training
